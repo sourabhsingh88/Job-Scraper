@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dynamic Scraper</h1>
+
+        <div class="form-group">
+            <input type="text" id="url" placeholder="Enter base URL with {keyword} and {page}">
+            <input type="text" id="keyword" placeholder="Enter job keyword">
+            <input type="number" id="page" placeholder="Enter page number" min="1" value="1">
+            <button onclick="searchJobs()">Search</button>
+        </div>
+
+        <h2>Results:</h2>
+        <div id="results"></div>
+
+    </div>
+    <footer>
+        Developed by @Sourabh
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
